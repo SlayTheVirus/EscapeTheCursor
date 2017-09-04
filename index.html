@@ -9,7 +9,7 @@
     </style>
   </head>
   <body>
-    <canvas id="myCanvas"></canvas>
+    <canvas id="myCanvas" width="578" height="200"></canvas>
     <script>
       function writeMessage(canvas, message) {
         var context = canvas.getContext('2d');
@@ -33,16 +33,6 @@
         var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
         writeMessage(canvas, message);
       }, false);
-      
-      /* important! for alignment, you should make things
- * relative to the canvas' current width/height.
- */
-function draw() {
-  var ctx = (a canvas context);
-  ctx.canvas.width  = window.innerWidth;
-  ctx.canvas.height = window.innerHeight;
-  //...drawing code...
-}
     </script>
   </body>
 </html>
