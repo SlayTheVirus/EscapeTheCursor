@@ -28,6 +28,7 @@
       var canvas = document.getElementById('myCanvas');
       var context = canvas.getContext('2d');
 
+      ctx.fillStyle = "#FF0000";
       ctx.fillRect(x,y,50,50)
       canvas.addEventListener('mousemove', function(evt) {
         var mousePos = getMousePos(canvas, evt);
